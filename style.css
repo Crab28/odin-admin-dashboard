@@ -2,10 +2,11 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .sidebar {
-    background-color: lightblue;
+    background-color: #0284c7;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -28,7 +29,6 @@ body {
 }
 
 .dashboard-container {
-    background-color: white;
     margin-bottom: 40px;
     width: 100%;
     max-width: 300px;
@@ -37,11 +37,45 @@ body {
 .dashboard-item {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    align-items: center;
+    color: #f0f9ff;
+    text-decoration: none;
+}
+
+.dashboard-item h1 {
+    font-size: 1.5rem;
+}
+
+.dashboard-item .item-name {
+    font-size: 0.9rem;
+}
+
+.dashboard-item h1,
+.dashboard-item .item-name {
+    padding-left: 5px;
+    font-weight: bold;
 }
 
 .dashboard-item .item-icon {
-    background-color: lightgray;
     text-align: center;
+    padding: 0 5px;
+}
+
+.dashboard-list .dashboard-item {
+    padding: 3px 0;
+    margin: 5px 0;
+}
+
+.dashboard-list .item-icon img {
+    max-width: 20px;
+}
+
+.dashboard-list .dashboard-item:hover {
+    background-color: #0369a1;
+}
+
+.item-icon img {
+    filter: invert(100%);
 }
 
 .header-container {
